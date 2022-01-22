@@ -30,7 +30,7 @@ export default function HeroSection() {
               lineHeight={"110%"}
             >
               Watch your favourite shows <br />
-              <Text as={"span"} color={"brand.red"}>
+              <Text as={"span"} color={"brand.white"}>
                 at your space, your time
               </Text>
             </Heading>
