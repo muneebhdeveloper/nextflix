@@ -1,5 +1,8 @@
 import { Box, Heading, Text, Stack, Button, Icon } from "@chakra-ui/react";
 import { BsPlayFill, BsStopwatchFill } from "react-icons/bs";
+import { motion } from "framer-motion";
+
+const MotionBox = motion(Box);
 
 export default function HeroSection() {
   return (
@@ -10,7 +13,15 @@ export default function HeroSection() {
       bgImg="assets/img/MoviePoster.png"
     >
       <Stack maxW="8xl" margin="0px auto" height="80vh" justifyContent="center">
-        <Box>
+        <MotionBox
+          variants={{
+            initial: { opacity: 0, x: -1000 },
+            show: { opacity: 1, x: 0 },
+          }}
+          initial="initial"
+          animate="show"
+          transition={{ delay: 0, default: { duration: 1 } }}
+        >
           <Stack>
             <Heading
               fontWeight={600}
@@ -55,7 +66,7 @@ export default function HeroSection() {
               </Button>
             </Stack>
           </Stack>
-        </Box>
+        </MotionBox>
       </Stack>
     </Box>
   );
