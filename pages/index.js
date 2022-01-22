@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navigation from "../components/Navigation";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <Navigation />
-    </div>
+    <Layout>
+      <div>Hello World</div>
+    </Layout>
   );
 }
