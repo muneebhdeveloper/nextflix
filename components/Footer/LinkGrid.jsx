@@ -7,7 +7,7 @@ const linkProps = {
 };
 
 export const LinkGrid = (props) => (
-  <SimpleGrid columns={4} {...props}>
+  <SimpleGrid columns={{ md: 4, sm: 2 }} {...props}>
     <Box minW="130px">
       <Stack>
         <Link {...linkProps}>How it works</Link>
