@@ -1,6 +1,10 @@
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import "../styles/globals.css";
 
 const theme = extendTheme({
+  config: {
+    initialColorMode: "dark",
+  },
   fonts: {
     heading: "Poppins",
     body: "Poppins",

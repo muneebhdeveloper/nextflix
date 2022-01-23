@@ -88,18 +88,8 @@ export default function Navigation() {
               display={{ base: "none", md: "flex" }}
               paddingLeft="35px"
             >
-              <IconButton
-                size="lg"
-                bg="transparent"
-                colorScheme="whiteAlpha"
-                icon={<Search2Icon />}
-              />
-              <IconButton
-                size="lg"
-                bg="transparent"
-                colorScheme="whiteAlpha"
-                icon={<BellIcon />}
-              />
+              <IconButton size="lg" bg="transparent" icon={<Search2Icon />} />
+              <IconButton size="lg" bg="transparent" icon={<BellIcon />} />
 
               <Menu>
                 <MenuButton

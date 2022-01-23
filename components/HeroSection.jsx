@@ -51,6 +51,8 @@ export default function HeroSection() {
                 py={8}
                 iconSpacing={5}
                 size="lg"
+                bgColor="brand.white"
+                color="brand.black"
                 leftIcon={<Icon as={BsPlayFill} w={8} h={8} />}
               >
                 Play Now
@@ -58,7 +60,6 @@ export default function HeroSection() {
               <Button
                 py={8}
                 iconSpacing={5}
-                colorScheme="whiteAlpha"
                 size="lg"
                 leftIcon={<Icon as={BsStopwatchFill} w={8} h={8} />}
               >
